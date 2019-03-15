@@ -169,7 +169,7 @@ append_loop:
 
 	str := "Environment"
 	pstr, _ := syscall.UTF16PtrFromString(str)
-	sendMessageTimeout(win.HWND_BROADCAST, win.WM_WININICHANGE, 0, uintptr(unsafe.Pointer(pstr)), SMTO_ABORTIFHUNG, 5000, 0)
+	sendMessageTimeout(win.HWND_BROADCAST, win.WM_WININICHANGE, 0, uintptr(unsafe.Pointer(pstr)), SMTO_ABORTIFHUNG, 100, 0)
 
 	return nil
 }
