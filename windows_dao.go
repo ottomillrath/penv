@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	SMTO_BLOCK uint32 = 0x0001
+	SMTO_ABORTIFHUNG uint32 = 0x0002
 )
 
 var (
@@ -169,7 +169,7 @@ append_loop:
 
 	str := "Environment"
 	pstr, _ := syscall.UTF16PtrFromString(str)
-	sendMessageTimeout(win.HWND_BROADCAST, win.WM_SETTINGCHANGE, 0, uintptr(unsafe.Pointer(pstr)), SMTO_BLOCK, 5000, 0)
+	sendMessageTimeout(win.HWND_BROADCAST, win.WM_WININICHANGE, 0, uintptr(unsafe.Pointer(pstr)), SMTO_ABORTIFHUNG, 5000, 0)
 
 	return nil
 }
