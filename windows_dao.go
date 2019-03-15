@@ -124,7 +124,7 @@ set_loop:
 				}
 			}
 		}
-		err = key.SetStringValue(nv.Name, nv.Value)
+		err = key.SetExpandStringValue(nv.Name, nv.Value)
 		if err != nil {
 			return err
 		}
@@ -142,14 +142,14 @@ append_loop:
 				}
 				values = append(values, strings.Split(value, ";")...)
 				values = uniquei(append(values, nv.Value))
-				err = key.SetStringValue(nv.Name, strings.Join(values, ";"))
+				err = key.SetExpandStringValue(nv.Name, strings.Join(values, ";"))
 				if err != nil {
 					return err
 				}
 				break append_loop
 			}
 		}
-		err = key.SetStringValue(nv.Name, nv.Value)
+		err = key.SetExpandStringValue(nv.Name, nv.Value)
 		if err != nil {
 			return err
 		}
