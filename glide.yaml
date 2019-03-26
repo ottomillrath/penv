@@ -1,0 +1,4 @@
+package: github.com/snakeice/penv
+import:
+- package: gopkg.in/alecthomas/kingpin.v2
+  version: ^2.2.6

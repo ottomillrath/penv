@@ -1,0 +1,21 @@
+hash: f3fd299f62f3d418b5da51d21fc96b639b03d4bc58d070fefe2fc78660fb1768
+updated: 2019-03-26T10:44:01.0659074-03:00
+imports:
+- name: github.com/alecthomas/template
+  version: a0175ee3bccc567396460bf5acd36800cb10c49c
+  subpackages:
+  - parse
+- name: github.com/alecthomas/units
+  version: 2efee857e7cfd4f3d0138cc3cbb1b4966962b93a
+- name: github.com/lxn/win
+  version: 0040366d745006bbf7528ac96de2de375846aa79
+- name: github.com/mitchellh/go-ps
+  version: 4fdf99ab29366514c69ccccddab5dc58b8d84062
+- name: golang.org/x/sys
+  version: e4b3c5e9061176387e7cea65e4dc5853801f3fb7
+  subpackages:
+  - windows
+  - windows/registry
+- name: gopkg.in/alecthomas/kingpin.v2
+  version: 947dcec5ba9c011838740e680966fd7087a71d0d
+testImports: []
