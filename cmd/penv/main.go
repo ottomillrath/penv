@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/badgerodon/penv"
+	"github.com/snakeice/penv"
 
 	"gopkg.in/alecthomas/kingpin.v2"
 )
